@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Zuloeta - Interactive CV Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar flotante con navegación -->
+<nav id="navbar">
+    <div class="nav-dot" data-step="0" data-label="Intro"></div>
+    <div class="nav-dot" data-step="1" data-label="Skills"></div>
+    <div class="nav-dot" data-step="2" data-label="Proyectos"></div>
+    <div class="nav-dot" data-step="3" data-label="Contacto"></div>
+</nav>
+
+<!-- Partículas de fondo -->
+<div id="particles"></div>
+
+<section id="scrolly">
+    
+    <div id="viz_container"></div>
+
+    <div id="text_container">
+        
+        <div class="step" data-step="0">
+            <div>
+                <!-- Titular principal -->
+                <h3>Marcelo Mario Zuloeta Salazar</h3>
+                <p class="role-subtitle">Computer Science Student @ UTEC</p>
+                <p>Estudiante apasionado por Big Data, Data Analytics e Inteligencia Artificial. Experiencia comprobada en QA Automation, soluciones Blockchain y despliegues escalables en AWS. Enfocado en metodologías ágiles y DevOps.</p>
+                <div style="margin-top: 20px;">
+                    <span class="tag">Big Data</span>
+                    <span class="tag">Cloud Computing</span>
+                    <span class="tag">AI & QA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="step" data-step="1">
+            <div>
+                <div class="subtitle">💻 STACK TECNOLÓGICO</div>
+                <h2>Arsenal de Herramientas</h2>
+                
+                <h3>Core Languages</h3>
+                <ul>
+                    <li><strong>Python & C++:</strong> Automatización, análisis de datos y sistemas de alto rendimiento.</li>
+                    <li><strong>SQL & C#:</strong> Gestión de bases de datos y desarrollo backend.</li>
+                    <li><strong>Java & Assembly:</strong> Programación orientada a objetos y bajo nivel.</li>
+                </ul>
+
+                <h3>Frameworks & Tools</h3>
+                <ul>
+                    <li><strong>Web & QA:</strong> Flask, React JS, Selenium, Robot Framework.</li>
+                    <li><strong>Data Science:</strong> Matplotlib, Scikit-learn, Pandas, NumPy.</li>
+                </ul>
+
+                <h3>Cloud & Database</h3>
+                <ul>
+                    <li><strong>Cloud Infrastructure:</strong> AWS (EC2, S3, RDS), Azure.</li>
+                    <li><strong>Data Engineering:</strong> Hadoop HDFS, Apache Spark, PostgreSQL, MySQL.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step" data-step="2">
+            <div>
+                <div class="subtitle">PORTAFOLIO DE PROYECTOS</div>
+                <h2>Experiencia y Proyectos</h2>
+                
+                <div class="project-highlight">
+                    <h3>Forecast Analytics (Big Data)</h3>
+                    <p>Pipeline completo de Big Data para procesar grandes datasets financieros. Uso de ETL, Machine Learning (clasificación/clustering) y almacenamiento distribuido.</p>
+                    <span class="tag">Hadoop HDFS</span>
+                    <span class="tag">Apache Spark</span>
+                    <span class="tag">PySpark</span>
+                </div>
+
+                <div class="project-highlight">
+                    <h3>Automatic TTS Translator</h3>
+                    <p>Aplicación web desplegada en la nube con auto-scaling y balanceo de carga. Arquitectura robusta utilizando servicios nativos de AWS.</p>
+                    <span class="tag">AWS EC2/S3/RDS</span>
+                    <span class="tag">Load Balancing</span>
+                    <span class="tag">CloudWatch</span>
+                </div>
+
+                <div class="project-highlight">
+                    <h3>Storyteller Bot</h3>
+                    <p>Web app generadora de imágenes para cuentos infantiles integrando APIs de DALL-E y ChatGPT. Redujo el tiempo de desarrollo de contenido en un 55%.</p>
+                    <span class="tag">Flask</span>
+                    <span class="tag">OpenAI API</span>
+                    <span class="tag">AWS Elastic Beanstalk</span>
+                </div>
+
+                <div class="project-highlight">
+                    <h3>Blockchain Transaction App</h3>
+                    <p>Implementación en C++ siguiendo los principios de Bitcoin (SHA256, Proof-of-Work) para transacciones digitales seguras y escalables.</p>
+                    <span class="tag">C++</span>
+                    <span class="tag">Cryptography</span>
+                    <span class="tag">SHA256</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="step" data-step="3">
+            <div>
+                <div class="subtitle">CONECTEMOS</div>
+                <h2>Let's Build Something Great</h2>
+                <p>Abierto a oportunidades en Ingeniería de Software, Ciencia de Datos y Cloud Computing. Con experiencia en entornos corporativos (NTT Data, TRANZACT) y startups.</p>
+                
+                <p style="margin-top: 20px;">
+                    <strong>Fortalezas:</strong><br>
+                    → Pensamiento estratégico y liderazgo<br>
+                    → Trabajo bajo presión y perseverancia<br>
+                    → Inglés Avanzado (C1)
+                </p>
+
+                <a href="mailto:marcelo.zuloeta@utec.edu.pe" class="contact-link">
+                    📧 marcelo.zuloeta@utec.edu.pe
+                </a>
+                <p class="contact-sub">+51 969 716 260 • Lima, Perú</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Scroll indicator -->
+<div class="scroll-indicator" id="scrollIndicator">
+    <svg viewBox="0 0 24 24">
+        <path d="M7 10l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script type="module">
+    import { vizManager, createParticles, setupScrollIndicator, setupStepObserver, setupNavigation } from './main.js';
+    
+    // Inicializar
+    const vizContainer = document.getElementById('viz_container');
+    
+    // Crear partículas de fondo
+    createParticles();
+    
+    // Setup scroll indicator
+    setupScrollIndicator();
+    
+    // Setup step observer
+    setupStepObserver(vizContainer);
+    
+    // Setup navegación
+    setupNavigation();
+    
+    // Iniciar con la primera visualización
+    vizManager.intro(vizContainer);
+</script>
+</body>
+</html>
